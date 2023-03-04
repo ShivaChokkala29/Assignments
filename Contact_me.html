@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My_static_webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+     background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+section {
+  display:-webkit-flex ;
+  display: flex ;
+}
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  -webkit-flex: 10;
+  -ms-flex: 5;
+  flex: 7;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin:10px
+}
+aside{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 5;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin:10px
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<header>
+  <h2>Contact Me</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About_me.html">About me</a></li>
+      <li><a href="Contact_me.html">Contact me</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+   
+    <form>
+  <label for="Name">Name:</label><br>
+  <input type="text" id="Name" name="Name" value="Shiva Chokkala"><br>
+  <label for="Subject">Subject:</label><br>
+  <input type="text" id="Subject" name="Subject" value=""><br>
+ <label for="Message">Message:</label><br>
+  <input type="text" id="Message" name="Message" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+  </article>
+ 
+  <aside>
+  
+</aside>
+ 
+ 
+</section>
+
+
+<footer>
+  <p> Copyright © HelloWord.com.
+</p>
+</footer>
+
+</body>
+</html>
+
